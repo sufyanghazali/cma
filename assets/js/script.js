@@ -43,7 +43,7 @@ overlay.on('click', function() {
 })
 
 for (let i = 0; i < navlinks.length; i++) {
-  if (url === navlinks[i].getAttribute('href')) {
+  if (url.endsWith(navlinks[i].getAttribute('href'))) {
     navlinks[i].classList.add('selected');
   }
 }
