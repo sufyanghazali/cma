@@ -61,12 +61,12 @@ a {
 }
 
 .home {
-  background-image: url('/assets/images/ideagen2017-duotone.jpg');
+  background-image: url('../images/ideagen2017-duotone.jpg');
   margin-bottom: 1rem;
 }
 
 .about {
-  background-image: url('/assets/images/joinus-duotone.jpg');
+  background-image: url('..assets/images/joinus-duotone.jpg');
 }
 
 .header-text {
