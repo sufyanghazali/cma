@@ -8,7 +8,7 @@ Navy: #1b2341; rgba(27, 35, 65, 1);
 
 html {
   box-sizing: border-box;
-  height: 100%;
+
 }
 
 *,
@@ -25,7 +25,7 @@ body {
   color: rgba(27, 35, 65, 1);
   line-height: 1.5;
   font-size: 15px;
-  height: 100%;
+  overflow: hidden;
 }
 
 header {
@@ -434,7 +434,6 @@ textarea {}
 }
 
 .disable-scroll {
-  height: 100%;
   overflow: hidden;
 }
 

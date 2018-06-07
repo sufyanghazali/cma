@@ -26,24 +26,24 @@ const exitMenu = $('.exit-menu');
 const overlay = $('.overlay');
 const navlinks = document.querySelectorAll('.navlink a')
 const url = window.location.pathname;
-const wrap = document.querySelector('.wrap');
+const body = document.querySelector('body');
 
 menu.on('click', function() {
   menuItems.slideDown();
   overlay.show();
-  wrap.classList.add('disable-scroll');
+  body.classList.add('disable-scroll');
 });
 
 exitMenu.on('click', function() {
   menuItems.slideUp();
   overlay.hide();
-  wrap.classList.remove('disable-scroll');
+  body.classList.remove('disable-scroll');
 })
 
 overlay.on('click', function() {
   menuItems.slideUp();
   overlay.hide();
-  wrap.classList.remove('disable-scroll');
+  body.classList.remove('disable-scroll');
 })
 
 for (let i = 0; i < navlinks.length; i++) {
