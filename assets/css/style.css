@@ -25,7 +25,6 @@ body {
   color: rgba(27, 35, 65, 1);
   line-height: 1.5;
   font-size: 15px;
-  overflow: hidden;
 }
 
 header {
@@ -253,17 +252,14 @@ a {
   color: rgba(27, 35, 65, .03)
 }
 
-.overlay {
+.overlay,
+.overlay-modal {
   display: none;
   background: rgba(0, 0, 0, .2);
   z-index: 2;
   position: fixed;
   width: 100%;
   height: 100%;
-}
-
-.show {
-  display: block;
 }
 
 .companies {
@@ -398,8 +394,6 @@ a {
   padding: 2rem;
 }
 
-textarea {}
-
 .form-input {
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 1rem;
@@ -430,13 +424,21 @@ textarea {}
 }
 
 .modal-form {
-  /* display: none; */
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
 }
 
 .disable-scroll {
   overflow: hidden;
 }
 
+.show {
+  display: block;
+}
 /******************* Media Queries *******************/
 
 @media (min-width: 690px) {

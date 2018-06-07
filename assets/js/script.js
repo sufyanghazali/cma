@@ -24,9 +24,12 @@ const menu = $('.menu-btn');
 const menuItems = $('.menu-items');
 const exitMenu = $('.exit-menu');
 const overlay = $('.overlay');
-const navlinks = document.querySelectorAll('.navlink a')
-const url = window.location.pathname;
+const modalOverlay = $('.overlay-modal');
 const body = document.querySelector('body');
+const joinBtn = $('#joinBtn');
+const modalForm = $('.modal-form');
+const navlinks = document.querySelectorAll('.navlink a');
+const url = window.location.pathname;
 
 menu.on('click', function() {
   menuItems.slideDown();
@@ -43,6 +46,19 @@ exitMenu.on('click', function() {
 overlay.on('click', function() {
   menuItems.slideUp();
   overlay.hide();
+  body.classList.remove('disable-scroll');
+  modalForm.hide();
+})
+
+joinBtn.on('click', function() {
+  modalForm.fadeIn();
+  modalOverlay.show();
+  body.classList.add('disable-scroll');
+})
+
+modalOverlay.on('click', function() {
+  modalForm.fadeOut();
+  modalOverlay.hide();
   body.classList.remove('disable-scroll');
 })
 
