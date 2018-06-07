@@ -12,8 +12,7 @@
   </head>
 
   <body>
-    <div class="overlay"></div>
-    <div class="overlay-modal"></div>
+
     <header class="home">
       <div class="container">
         <div class="navbar">
@@ -25,6 +24,7 @@
               <span></span>
             </div>
           </div>
+          <div class="overlay"></div>
           <div class="menu-items">
             <!-- make this display: none; -->
             <i class="fas fa-times exit-menu"></i>
@@ -128,23 +128,27 @@ students and industry professionals</strong></div>
             <h2>Want to make the most out of your time in university?</h2>
           </div>
           <div id="joinBtn" class="btn cta">Join Us</div>
-          <div class="form-container modal-form">
-            <form class="bg-white" method="post">
-              <div class="form-wrapper">
-                <div class="form-grid">
-                  <div class="form-group">
-                    <input class="form-input" type="text" name="name" placeholder="Name">
-                    <input class="form-input" type="text" name="studentid" placeholder="Student ID">
+          <div class="wrap-modal">
+            <div class="modal-overlay"></div>
+            <div class="modal">
+              <form class="bg-white" method="post">
+                <div class="form-wrapper">
+                  <div class="form-grid">
+                    <div class="form-group">
+                      <input class="form-input" type="text" name="name" placeholder="Name">
+                      <input class="form-input" type="text" name="studentid" placeholder="Student ID">
+                    </div>
+                    <div class="form-group">
+                      <input class="form-input" type="text" name="email" placeholder="Email">
+                      <input class="form-input" type="text" name="field" placeholder="Field of Study">
+                    </div>
                   </div>
-                  <div class="form-group">
-                    <input class="form-input" type="text" name="email" placeholder="Email">
-                    <input class="form-input" type="text" name="field" placeholder="Field of Study">
-                  </div>
+                  <button class="submit-btn">Submit</button>
                 </div>
-                <button class="submit-btn">Submit</button>
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
+
         </section>
         <div class="container">
 

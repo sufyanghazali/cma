@@ -24,43 +24,45 @@ const menu = $('.menu-btn');
 const menuItems = $('.menu-items');
 const exitMenu = $('.exit-menu');
 const overlay = $('.overlay');
-const modalOverlay = $('.overlay-modal');
+const modal = $('.modal');
+const modalOverlay = $('.modal-overlay');
+const joinBtn = document.querySelector('#joinBtn');
 const body = document.querySelector('body');
-const joinBtn = $('#joinBtn');
-const modalForm = $('.modal-form');
 const navlinks = document.querySelectorAll('.navlink a');
 const url = window.location.pathname;
+const modalWrap = document.querySelector('.wrap-modal');
 
-menu.on('click', function() {
+menu.on('click', () => {
   menuItems.slideDown();
   overlay.show();
   body.classList.add('disable-scroll');
 });
 
-exitMenu.on('click', function() {
+exitMenu.on('click', () => {
   menuItems.slideUp();
   overlay.hide();
   body.classList.remove('disable-scroll');
-})
+});
 
-overlay.on('click', function() {
+overlay.on('click', () => {
   menuItems.slideUp();
   overlay.hide();
   body.classList.remove('disable-scroll');
-  modalForm.hide();
-})
+});
 
-joinBtn.on('click', function() {
-  modalForm.fadeIn();
-  modalOverlay.show();
+joinBtn.addEventListener('click', () => {
   body.classList.add('disable-scroll');
-})
+  modal.fadeIn();
+  modalWrap.classList.add('active-modal');
+  modalOverlay.fadeIn();
+});
 
-modalOverlay.on('click', function() {
-  modalForm.fadeOut();
-  modalOverlay.hide();
+modalOverlay.on('click', () => {
   body.classList.remove('disable-scroll');
-})
+  modal.fadeOut();
+  modalWrap.classList.remove('active-modal');
+  modalOverlay.fadeOut();
+});
 
 for (let i = 0; i < navlinks.length; i++) {
   if (url.endsWith(navlinks[i].getAttribute('href'))) {
