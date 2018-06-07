@@ -258,6 +258,7 @@ a {
   position: fixed;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 
 .show {
@@ -426,6 +427,18 @@ textarea {}
 .submit-btn {
   display: block
 }
+
+.modal-form {
+  /* display: none; */
+}
+
+.disable-scroll {
+  height: 100%;
+  overflow: hidden;
+}
+
+/******************* Media Queries *******************/
+
 
 @media (min-width: 690px) {
   .navbar {
