@@ -1,6 +1,7 @@
 /*
 Brand Colors :
 Aqua: #3bb0b0; rgba(59, 176, 176, 1);
+Aqua2: rgba(26, 126, 126, 1);
 Blue: #164191; rgba(22, 65, 145, 1);
 Navy: #1b2341; rgba(27, 35, 65, 1);
 */
@@ -165,6 +166,12 @@ a {
   /* position: relative; */
 }
 
+.form-container {
+  width: 80%;
+  max-width: 350px;
+  margin: 5rem auto 0;
+}
+
 .grid,
 .grid3 {
   display: grid;
@@ -246,7 +253,7 @@ a {
 
 .overlay {
   display: none;
-  background: rgba(0, 0, 0, .6);
+  background: rgba(0, 0, 0, .2);
   z-index: 2;
   position: fixed;
   width: 100%;
@@ -388,17 +395,36 @@ a {
 .form-wrapper {
   padding: 2rem;
 }
+
+textarea {}
+
 .form-input {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1rem;
   display: block;
   width: 100%;
   padding: 1rem 0 .75rem 0;
   margin-bottom: 2rem;
   border: 0;
-  border-bottom: 2px solid rgba(59, 176, 176, 1);
+  border-bottom: 2px solid rgba(26, 126, 126, .2);
+  transition: border-bottom .3s ease-in-out;
 }
 
 .form-input:focus {
   outline: none;
+  border-bottom: 2px solid rgba(59, 176, 176, 1);
+}
+
+.form-grid {
+  display: grid;
+}
+
+.centre-align {
+  text-align: center;
+}
+
+.submit-btn {
+  display: block
 }
 
 @media (min-width: 690px) {
@@ -436,9 +462,19 @@ a {
     margin: 0;
     margin-top: 3rem;
   }
+  .form-container {
+    max-width: 750px;
+  }
+  .form-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+  }
 }
 
 @media (min-width: 870px) {
+  .headline {
+    font-size: 2rem;
+  }
   .container {
     width: 70%;
     max-width: 1080px;
@@ -465,7 +501,6 @@ a {
   .intro-text {
     width: 70%;
   }
-
 }
 
 @media (min-width: 1240px) {

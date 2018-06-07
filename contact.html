@@ -12,8 +12,6 @@
   </head>
 
   <body>
-    <p>testing git diff</p>
-    <p>Testing git diff4</p>
     <div class="overlay"></div>
     <header class="about">
       <div class="container">
@@ -33,7 +31,6 @@
               <nav class="navlinks">
                 <div class="navlink"><a href="index.html">Home</a></div>
                 <div class="navlink"><a href="about.html">About</a></div>
-                <div class="navlink"><a href="ideagen.html">IdeaGen</a></div>
                 <div class="navlink"><a href="contact.html">Contact</a></div>
                 <div class="navlink"><a href="join.html">Join Us</a></div>
               </nav>
@@ -48,17 +45,23 @@
     </header>
 
     <main>
-      <div class="container description pb">
-        <div class="headline"><strong>Assisting students in becoming professionals</strong></div>
+      <div class="form-container">
+        <div class="headline centre-align"><strong>Tell us more about how we can help you</strong></div>
         <form class="bg-white" method="post">
           <div class="form-wrapper">
-            <input class="form-input" type="text" name="name" placeholder="Name">
-            <input class="form-input" type="text" name="company" placeholder="Company name">
-            <input class="form-input" type="text" name="email" placeholder="E-mail">
-            <input class="form-input" type="text" name="phone" placeholder="Phone Number">
-            <button class="">Submit</button>
+            <div class="form-grid">
+              <div class="form-group">
+                <input class="form-input" type="text" name="name" placeholder="Name">
+                <input class="form-input" type="text" name="company" placeholder="Company name">
+              </div>
+              <div class="form-group">
+                <input class="form-input" type="text" name="email" placeholder="Email">
+                <input class="form-input" type="text" name="phone" placeholder="Phone Number">
+              </div>
+            </div>
+            <textarea class="form-input" placeholder="Message" rows="10"></textarea>
+            <button class="submit-btn">Submit</button>
           </div>
-
         </form>
       </div>
 
@@ -68,7 +71,7 @@
         <div class="container question">
           <h2>Want to make the most out of your time in university?</h2>
         </div>
-        <a class="btn cta" href="#">Join Us</a>
+        <div class="btn cta" href="#">Join Us</div>
       </section>
       <div class="container">
 
