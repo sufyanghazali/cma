@@ -425,6 +425,16 @@ a {
 
 .submit-btn {
   display: block;
+  margin-top: 4.5rem;
+  margin-left: auto;
+  background: rgba(22, 65, 145, 1);
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  letter-spacing: 0.03rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 4px;
 }
 
 
@@ -441,12 +451,16 @@ a {
   justify-content: center;
 }
 
+
 .active-modal {
   display: flex;
 }
 
 .modal {
   display: none;
+  padding: 3rem;
+  width: 60%;
+  max-width: 500px;
   z-index: 20;
 }
 
@@ -457,7 +471,6 @@ a {
 .show {
   display: block;
 }
-
 /******************* Media Queries *******************/
 
 @media (min-width: 690px) {
