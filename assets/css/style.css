@@ -27,7 +27,7 @@ body {
 }
 
 header {
-  padding: 1rem 0;
+  padding: 2rem 0;
   color: white;
   background-position: center;
   background-repeat: no-repeat;
@@ -63,7 +63,6 @@ a {
 
 .home {
   background-image: url('../images/ideagen2017-duotone.jpg');
-  margin-bottom: 1rem;
 }
 
 .about {
@@ -195,7 +194,7 @@ a {
 }
 
 .description {
-  padding-top: 4rem;
+  padding-top: 5rem;
 }
 
 .description-header {
